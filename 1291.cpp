@@ -32,6 +32,11 @@ public:
                 }
                 
             }
+            if (digits[i] > high)
+            {
+                break;
+            }
+            
         }
 
         return sortedList;
@@ -40,7 +45,7 @@ public:
 };
 
 int main(){
-    int low = 100 , high = 300;
+    int low = 100 , high = 900;
     Solution s;
     vector<int> sortedList = s.sequentialDigits(low,high);
 
