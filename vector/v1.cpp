@@ -3,24 +3,18 @@
 using namespace std;
 
 int main(){
-    vector<int> nums = {35,45,56};
+    vector<int> nums = {35,45,56,34,23};
 
-    nums.push_back(1);
-    nums.push_back(2);
-
-    cout<<endl <<" vector = ";
-    for (int i : nums)
-    {
-        cout<< "  " << i;
+    if (nums.size()%2==0){
+        for (int i = 0; i < nums.size(); i++){
+            
+        }
+        
     }
+    
 
-    nums.pop_back();
+    cout << *(nums.begin()) << endl;
 
-    cout<<endl <<" vector = ";
-    for (int i : nums)
-    {
-        cout<< "  " << i;
-    }
+    cout << *(nums.end() - 1);
 
-    cout << endl << nums.at(6);
 }
